@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JURAGAN STORE</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff6f61;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            width: 120px; /* Sesuaikan dengan ukuran logo kamu */
+        }
+
+        .site-title {
+            font-size: 2em;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+
+        main {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 30px;
+            color: #ff6f61;
+        }
+
+        .produk-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px; /* Jarak antar produk */
+        }
+
+        .produk-item {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            padding: 20px;
+            text-align: center;
+            flex: 1 1 calc(33% - 40px); /* Menyesuaikan lebar produk */
+            box-sizing: border-box;
+        }
+
+        .produk-item img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .produk-item h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .produk-item p {
+            font-size: 1.2em;
+            color: #777;
+        }
+
+        footer {
+            background-color: #ff6f61;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        #sosial-media a {
+            color: #ff6f61;
+            text-decoration: none;
+            font-size: 1.5em;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        #sosial-media a:hover {
+            color: #333;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+        }
+
+        .payment-links {
+            margin-top: 30px;
+        }
+
+        .payment-links a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #ff6f61;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .payment-links a:hover {
+            background-color: #e05d50;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logo" class="logo"> <!-- Tempatkan logo di sini -->
+        <div class="site-title">
+            <h1>JURAGAN STORE</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="https://wa.me/6281386632198#kontak">Kontak</a></li>
+                <li><a href="https://www.instagram.com/rachmat_setyono91#sosial-media">Sosial Media</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="produk">
+            <h2>Produk Unggulan Kami</h2>
+            <div class="produk-container">
+                <div class="produk-item">
+                    <img src="img/2.jpg" alt="2">
+                    <h3>adidas</h3>
+                    <p>Rp1500.000</p>
+                </div>
+                <div class="produk-item">
+                    <img src="img/3.jpg" alt="3">
+                    <h3>Adidas Samba</h3>
+                    <p>Rp150.000</p>
+                </div>
+                <!-- Tambahkan lebih banyak produk sesuai kebutuhan -->
+            </div>
+            <div class="payment-links">
+                <h3>Metode Pembayaran</h3>
+                <a href="https://link-bank-1.com" target="_blank">DANA</a>
+                <a href="https://link-bank-2.com" target="_blank">BCA</a>
+                <a href="https://link-bank-3.com" target="_blank">Mandiri</a>
+            </div>
+        </section>
+
+        <section id="kontak">
+            <h2>Kontak Kami</h2>
+            <div class="contact-info">
+                
+                <p>HUBUNGI KAMI DI: <a href="tel:+6281386632198">+62 813-8663-2198</a></p>
+            </div>
+        </section>
+
+        <section id="sosial-media">
+            <h2>Ikuti Kami di Sosial Media</h2>
+            <a href="https://www.instagram.com/rachmat_setyono91" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/6281234567890" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Jajanan Nusantara. Semua Hak Dilindungi.</p>
+    </footer>
+</body>
+</html>
